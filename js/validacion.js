@@ -7,6 +7,13 @@ function showAlertError() {
 }
 
 
+
+if (nombre && apellido && email && password1 && password2 && password1 === password2 && terminos) {
+    showAlertSuccess();
+} else {
+    showAlertError();
+}
+
       //Las contraseñas deben coincidir en los dos campos//
 const regBtn = document.getElementById('regBtn');
 regBtn.addEventListener('click', (event) => {
@@ -24,3 +31,4 @@ regBtn.addEventListener('click', (event) => {
     else { 
         //Si coinciden, permitir el envío del formulario//
         ""; }
+
