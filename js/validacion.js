@@ -7,6 +7,14 @@ function showAlertError() {
 }
 
 
+
+
+if (nombre && apellido && email && password1 && password2 && terminos) {
+    showAlertSuccess();
+} else {
+    showAlertError();
+}
+
       //Las contraseñas deben coincidir en los dos campos//
 document.addEventListener('DOMContentLoaded', () => {
     const regBtn = document.getElementById('regBtn');
