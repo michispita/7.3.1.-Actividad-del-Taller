@@ -7,19 +7,22 @@ function showAlertError() {
 }
 
 
-
-if (nombre && apellido && email && password1 && password2 && password1 === password2 && terminos) {
-    showAlertSuccess();
-} else {
-    showAlertError();
-}
-
       //Las contraseñas deben coincidir en los dos campos//
 document.addEventListener('DOMContentLoaded', () => {
     const regBtn = document.getElementById('regBtn');
     const password1 = document.getElementById('password1');
     const password2 = document.getElementById('password2');
+    const nombre = document.getElementById('nombre');
+    const apellido = document.getElementById('apellido');
+    const email = document.getElementById('email');
+    const terminos = document.getElementById('terminos');
     
+
+    if (nombre && apellido && email && password1 && password2 && password1 === password2 && terminos) {
+        showAlertSuccess();
+    } else {
+        showAlertError();
+    }
 
     regBtn.addEventListener('click', () => {
         // Oculta las alertas por defecto
