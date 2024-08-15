@@ -7,6 +7,13 @@ function showAlertError() {
 }
 
 
+
+if (nombre && apellido && email && password1 && password2 && password1 === password2 && terminos) {
+    showAlertSuccess();
+} else {
+    showAlertError();
+}
+
       //Las contraseñas deben coincidir en los dos campos//
 document.addEventListener('DOMContentLoaded', () => {
     const regBtn = document.getElementById('regBtn');
@@ -18,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Oculta las alertas por defecto
        
 
+
         // Compara las contraseñas
         if (password1.value !== password2.value) {
             // Contraseñas coinciden
@@ -28,3 +36,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+    const password1 = document.getElementById('password1').value;
+    const password2 = document.getElementById('password2').value;
+   
+    
+    if (password1 !== password2) {
+        //Prevenir que el formulario se envíe//
+        event.preventDefault();
+        alert("Deben ser iguales")
+     } 
+    else { 
+        //Si coinciden, permitir el envío del formulario//
+        ""; }
+
+
