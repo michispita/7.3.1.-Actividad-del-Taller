@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
     
 
     if (nombre && apellido && email && password1 && password2 && password1 === password2 && terminos) {
+            //Prevenir que el formulario se envíe//
+            event.preventDefault();
         showAlertSuccess();
     } else {
         showAlertError();
