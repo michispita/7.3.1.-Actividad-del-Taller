@@ -21,7 +21,7 @@ regBtn.addEventListener('click', (event) => {
         //Prevenir que el formulario se envíe//
         event.preventDefault();
         //Mostrar un mensaje de error// 
-        alert-Danger.textContent = "Las contraseñas no coinciden. Por favor, inténtelo de nuevo."; } 
+        alertDanger.textContent = "Las contraseñas no coinciden. Por favor, inténtelo de nuevo."; } 
     else { 
         //Si coinciden, permitir el envío del formulario//
-        alert-Success.textContent = ""; }
+        alertSuccess.textContent = ""; }
